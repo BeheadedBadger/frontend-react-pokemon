@@ -1,1 +1,8 @@
-/*Schrijf hier jouw eigen CSS!*/
+.pokemon-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
