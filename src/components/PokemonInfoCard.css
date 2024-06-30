@@ -1,0 +1,33 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #1a1a1a;
+    width: 250px;
+    padding: 20px;
+    margin: 20px;
+    height: 350px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0.4em;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.card img {
+    min-height: 150px;
+    max-height: 150px;
+}
+
+p {
+    margin: 0.4em;
+}
