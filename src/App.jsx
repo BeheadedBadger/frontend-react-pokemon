@@ -32,7 +32,8 @@ function App() {
     }, [startNumber]);
 
   return (
-      <>
+      <div className="content">
+          <img className="logo" src="../src/assets/pokemon-logo-png-pokemon-logo-text-png-1428-1390-2569809720.png" alt="Pokemon" />
           <h1>Gotta catch em all!</h1>
           {!fetchingCompleted && <>Loading...</>}
           {fetchingCompleted && <><ul className="pokemon-card-container">
@@ -46,7 +47,7 @@ function App() {
                                        abilities={pokemon.abilities}/>
                   </li>))}
           </ul>
-          <button disabled={startNumber <= 1}
+          <div className="buttons"><button disabled={startNumber <= 1}
               onClick={() => {
                   setEndNumber(endNumber - 20);
                   setStartNumber(startNumber - 20);
@@ -59,8 +60,8 @@ function App() {
                   setStartNumber(startNumber + 20);
               }}>
               <p>next 20 →</p>
-          </button></>}
-      </>
+          </button></div></>}
+      </div>
   )
 }
 
